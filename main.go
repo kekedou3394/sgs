@@ -1,10 +1,15 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/kekenalog/sgs/middleware"
+)
 
 func main() {
+
 	// 创建一个默认的路由引擎
 	r := gin.New()
+	r.Use(middleware.LoggerToFile())
 
 	// 配置路由
 	r.GET("/", func(c *gin.Context) {

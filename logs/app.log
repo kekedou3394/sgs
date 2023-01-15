@@ -1,0 +1,2 @@
+time="2023-01-16T01:25:21+08:00" level=info msg="| 200 |      63.461µs |             ::1 | GET | / |"
+time="2023-01-16T01:25:22+08:00" level=info msg="| 404 |          92ns |             ::1 | GET | /favicon.ico |"
